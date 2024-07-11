@@ -3,12 +3,12 @@ if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 
 //═══════[Required Variables]════════\\
-global.audio= "" ;  
-global.video= "" ;
+global.audio= "true" ;  
+global.video= "true" ;
 global.port =process.env.PORT
 global.appUrl=process.env.APP_URL || ""                       // put your app url here,
-global.email ="saimsamsun789@gmail.com"
-global.location="Lahore,Pakistan."
+global.email ="mubiruhamdan92@gmail.com"
+global.location="Kampala,ugandan."
 
 
 global.mongodb= process.env.MONGODB_URI || ""
@@ -16,30 +16,30 @@ global.allowJids= process.env.ALLOW_JID || "null"
 global.blockJids= process.env.BLOCK_JID || "null"
 global.DATABASE_URL = process.env.DATABASE_URL || ""
 
-global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
+global.timezone= process.env.TZ || process.env.TIME_ZONE || "enland/united kingdom";
 global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md";
 global.gurl  =process.env.GURL  || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643";
 global.website=process.env.GURL || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643" ; 
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://github.com/SuhailTechInfo/Suhail-Md/blob/main/lib/assets/suhail.jpg?raw=true" ; // SET LOGO FOR IMAGE 
-global.caption = process.env.CAPTION || global.caption || "ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʜᴀɪʟ²²¹-ᴍᴅ" 
+global.caption = process.env.CAPTION || global.caption || "ᴘᴏᴡᴇʀᴇᴅ ʙʏ HAMDAN²²¹-ᴍᴅ" 
 
 
-global.devs = "923184474176" // Developer Contact
+global.devs = "256766278461" // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "923184474176";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "256766278461";
 
 
 
 
 //========================= [ BOT SETTINGS ] =========================\\
 global.style = process.env.STYLE   || '5'  // put '1' to "5" here to check bot styles
-global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
-global.gdbye = process.env.GOODBYE || "false"; 
-global.wlcm  = process.env.WELCOME || "false";  // Make it "false" for disable WELCOME 
+global.flush = process.env.FLUSH   || "true"; // Make it "true" if bot not responed
+global.gdbye = process.env.GOODBYE || "true"; 
+global.wlcm  = process.env.WELCOME || "true";  // Make it "false" for disable WELCOME 
 
 global.warncount = process.env.WARN_COUNT || 3
-global.disablepm = process.env.DISABLE_PM || "false"
-global.disablegroup = process.env.DISABLE_GROUPS || "false", // disable bot in groups when public mode
+global.disablepm = process.env.DISABLE_PM || "true"
+global.disablegroup = process.env.DISABLE_GROUPS || "true", // disable bot in groups when public mode
 
 global.MsgsInLog = process.env.MSGS_IN_LOG|| "false" // "true"  to see messages , "log" to show logs , "false" to hide logs messages
 global.userImages= process.env.USER_IMAGES || "text" // set Image/video urls here
@@ -47,40 +47,40 @@ global.waPresence= process.env.WAPRESENCE ||  "null" ; // 'unavailable' | 'avail
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "false"
-global.readmessage = process.env.READ_MESSAGE || "false"
-global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
+global.readcmds = process.env.READ_COMMAND || "true"
+global.readmessage = process.env.READ_MESSAGE || "true"
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,256xxxxxxxx";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "false"
-global.save_status = process.env.AUTO_SAVE_STATUS || "false"
-global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
-global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923xxxxxxxx";
+global.read_status = process.env.AUTO_READ_STATUS || "true"
+global.save_status = process.env.AUTO_SAVE_STATUS || "true"
+global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,256xxxxxxxx";
+global.read_status_from =  process.env.READ_STATUS_FROM  ||  "256766278461,923xxxxxxxx";
 
 global.api_smd = "https://api-smd.onrender.com" //  || "https://api-smd-1.vercel.app" // expires
 global.scan = "https://suhail-md-vtsf.onrender.com";
 
 
-global.SESSION_ID = process.env.SESSION_ID ||  ""  // PUT your SESSION_ID 
+global.SESSION_ID = process.env.SESSION_ID ||  "SUHAIL_11_16_07_10_ewogICJjcmVkcy5qc29uIjogIntcbiAgXCJub2lzZUtleVwiOiB7XG4gICAgXCJwcml2YXRlXCI6IHtcbiAgICAgIFwidHlwZVwiOiBcIkJ1ZmZlclwiLFxuICAgICAgXCJkYXRhXCI6IFtcbiAgICAgICAgMCxcbiAgICAgICAgNTIsXG4gICAgICAgIDE0OCxcbiAgICAgICAgMTQyLFxuICAgICAgICAxMSxcbiAgICAgICAgMzQsXG4gICAgICAgIDIyMSxcbiAgICAgICAgNzAsXG4gICAgICAgIDY4LFxuICAgICAgICAyMDEsXG4gICAgICAgIDcwLFxuICAgICAgICAxOTcsXG4gICAgICAgIDY2LFxuICAgICAgICAxMTQsXG4gICAgICAgIDEyNCxcbiAgICAgICAgMTYsXG4gICAgICAgIDEzOSxcbiAgICAgICAgMTUwLFxuICAgICAgICA3MCxcbiAgICAgICAgNzgsXG4gICAgICAgIDE5NSxcbiAgICAgICAgMTU4LFxuICAgICAgICAxMzcsXG4gICAgICAgIDE5OSxcbiAgICAgICAgMTY3LFxuICAgICAgICAxMDAsXG4gICAgICAgIDY3LFxuICAgICAgICAxMzksXG4gICAgICAgIDczLFxuICAgICAgICA2OSxcbiAgICAgICAgNzEsXG4gICAgICAgIDgxXG4gICAgICBdXG4gICAgfSxcbiAgICBcInB1YmxpY1wiOiB7XG4gICAgICBcInR5cGVcIjogXCJCdWZmZXJcIixcbiAgICAgIFwiZGF0YVwiOiBbXG4gICAgICAgIDE0NyxcbiAgICAgICAgMTE1LFxuICAgICAgICAxOTcsXG4gICAgICAgIDIxMSxcbiAgICAgICAgMjMsXG4gICAgICAgIDkxLFxuICAgICAgICAxODgsXG4gICAgICAgIDYzLFxuICAgICAgICAyOSxcbiAgICAgICAgMTI4LFxuICAgICAgICAzMyxcbiAgICAgICAgMTY2LFxuICAgICAgICAxNzQsXG4gICAgICAgIDczLFxuICAgICAgICAxMzEsXG4gICAgICAgIDEwNixcbiAgICAgICAgMTMyLFxuICAgICAgICA1MyxcbiAgICAgICAgMTA2LFxuICAgICAgICAyMjQsXG4gICAgICAgIDcxLFxuICAgICAgICAxNTgsXG4gICAgICAgIDIxNCxcbiAgICAgICAgMTM3LFxuICAgICAgICAxMjMsXG4gICAgICAgIDY0LFxuICAgICAgICA3MixcbiAgICAgICAgMTQzLFxuICAgICAgICA2NCxcbiAgICAgICAgNTcsXG4gICAgICAgIDE1NyxcbiAgICAgICAgNzlcbiAgICAgIF1cbiAgICB9XG4gIH0sXG4gIFwicGFpcmluZ0VwaGVtZXJhbEtleVBhaXJcIjoge1xuICAgIFwicHJpdmF0ZVwiOiB7XG4gICAgICBcInR5cGVcIjogXCJCdWZmZXJcIixcbiAgICAgIFwiZGF0YVwiOiBbXG4gICAgICAgIDE5MixcbiAgICAgICAgNjcsXG4gICAgICAgIDE3MCxcbiAgICAgICAgMzgsXG4gICAgICAgIDY0LFxuICAgICAgICAxMzYsXG4gICAgICAgIDIzOCxcbiAgICAgICAgMjI5LFxuICAgICAgICAyMjAsXG4gICAgICAgIDg0LFxuICAgICAgICAxNDEsXG4gICAgICAgIDgxLFxuICAgICAgICAyNDEsXG4gICAgICAgIDI4LFxuICAgICAgICA2OSxcbiAgICAgICAgMjI3LFxuICAgICAgICA1MSxcbiAgICAgICAgMjAsXG4gICAgICAgIDk5LFxuICAgICAgICAxMTEsXG4gICAgICAgIDg4LFxuICAgICAgICAyMjUsXG4gICAgICAgIDgxLFxuICAgICAgICA1NyxcbiAgICAgICAgMjksXG4gICAgICAgIDE0NyxcbiAgICAgICAgMjI3LFxuICAgICAgICA0OCxcbiAgICAgICAgMTkyLFxuICAgICAgICAyMTMsXG4gICAgICAgIDM5LFxuICAgICAgICAxMTFcbiAgICAgIF1cbiAgICB9LFxuICAgIFwicHVibGljXCI6IHtcbiAgICAgIFwidHlwZVwiOiBcIkJ1ZmZlclwiLFxuICAgICAgXCJkYXRhXCI6IFtcbiAgICAgICAgMTYyLFxuICAgICAgICAyMTUsXG4gICAgICAgIDc2LFxuICAgICAgICA0MCxcbiAgICAgICAgNTIsXG4gICAgICAgIDIyNyxcbiAgICAgICAgMTQsXG4gICAgICAgIDcyLFxuICAgICAgICAxOTIsXG4gICAgICAgIDQ3LFxuICAgICAgICAyMTIsXG4gICAgICAgIDMwLFxuICAgICAgICAxOTcsXG4gICAgICAgIDcsXG4gICAgICAgIDI0MyxcbiAgICAgICAgMTY0LFxuICAgICAgICAzNyxcbiAgICAgICAgMCxcbiAgICAgICAgMjE2LFxuICAgICAgICAyMyxcbiAgICAgICAgMjAwLFxuICAgICAgICAxMzgsXG4gICAgICAgIDE1LFxuICAgICAgICAxOTUsXG4gICAgICAgIDEyMixcbiAgICAgICAgMjI1LFxuICAgICAgICA5MixcbiAgICAgICAgNTUsXG4gICAgICAgIDM0LFxuICAgICAgICAxODcsXG4gICAgICAgIDE5OCxcbiAgICAgICAgMThcbiAgICAgIF1cbiAgICB9XG4gIH0sXG4gIFwic2lnbmVkSWRlbnRpdHlLZXlcIjoge1xuICAgIFwicHJpdmF0ZVwiOiB7XG4gICAgICBcInR5cGVcIjogXCJCdWZmZXJcIixcbiAgICAgIFwiZGF0YVwiOiBbXG4gICAgICAgIDIzMixcbiAgICAgICAgMjMxLFxuICAgICAgICAxOTAsXG4gICAgICAgIDIwOSxcbiAgICAgICAgMTQ0LFxuICAgICAgICAzLFxuICAgICAgICAxNTYsXG4gICAgICAgIDIxNCxcbiAgICAgICAgMTAzLFxuICAgICAgICAyNDAsXG4gICAgICAgIDgxLFxuICAgICAgICA0MSxcbiAgICAgICAgMTUyLFxuICAgICAgICAxNzcsXG4gICAgICAgIDIwNCxcbiAgICAgICAgMjMzLFxuICAgICAgICAyMDUsXG4gICAgICAgIDEyLFxuICAgICAgICAxMTQsXG4gICAgICAgIDE2NCxcbiAgICAgICAgMTQyLFxuICAgICAgICAyNDUsXG4gICAgICAgIDYzLFxuICAgICAgICAyMDUsXG4gICAgICAgIDIwMCxcbiAgICAgICAgMTQ4LFxuICAgICAgICAxNTgsXG4gICAgICAgIDUsXG4gICAgICAgIDIxMixcbiAgICAgICAgMjQ5LFxuICAgICAgICA0NyxcbiAgICAgICAgNjlcbiAgICAgIF1cbiAgICB9LFxuICAgIFwicHVibGljXCI6IHtcbiAgICAgIFwidHlwZVwiOiBcIkJ1ZmZlclwiLFxuICAgICAgXCJkYXRhXCI6IFtcbiAgICAgICAgMTk4LFxuICAgICAgICA4MixcbiAgICAgICAgMTg2LFxuICAgICAgICAzOCxcbiAgICAgICAgNzgsXG4gICAgICAgIDExOCxcbiAgICAgICAgMjEwLFxuICAgICAgICAzNSxcbiAgICAgICAgMTAwLFxuICAgICAgICAxMTgsXG4gICAgICAgIDYzLFxuICAgICAgICAxOCxcbiAgICAgICAgMTI0LFxuICAgICAgICAxODUsXG4gICAgICAgIDI2LFxuICAgICAgICA4MCxcbiAgICAgICAgNzYsXG4gICAgICAgIDE4LFxuICAgICAgICAxNyxcbiAgICAgICAgMjM1LFxuICAgICAgICAxNzksXG4gICAgICAgIDExNyxcbiAgICAgICAgMTk5LFxuICAgICAgICAyNTMsXG4gICAgICAgIDY4LFxuICAgICAgICAxMDUsXG4gICAgICAgIDYwLFxuICAgICAgICAyMDMsXG4gICAgICAgIDc4LFxuICAgICAgICAyNTIsXG4gICAgICAgIDI0MixcbiAgICAgICAgNDZcbiAgICAgIF1cbiAgICB9XG4gIH0sXG4gIFwic2lnbmVkUHJlS2V5XCI6IHtcbiAgICBcImtleVBhaXJcIjoge1xuICAgICAgXCJwcml2YXRlXCI6IHtcbiAgICAgICAgXCJ0eXBlXCI6IFwiQnVmZmVyXCIsXG4gICAgICAgIFwiZGF0YVwiOiBbXG4gICAgICAgICAgMjQwLFxuICAgICAgICAgIDI2LFxuICAgICAgICAgIDIsXG4gICAgICAgICAgNDQsXG4gICAgICAgICAgNDcsXG4gICAgICAgICAgMTg4LFxuICAgICAgICAgIDMzLFxuICAgICAgICAgIDEyLFxuICAgICAgICAgIDE2MixcbiAgICAgICAgICA3MixcbiAgICAgICAgICAzMixcbiAgICAgICAgICAxOTUsXG4gICAgICAgICAgMTIzLFxuICAgICAgICAgIDIyOCxcbiAgICAgICAgICAxNDcsXG4gICAgICAgICAgMjgsXG4gICAgICAgICAgMTI0LFxuICAgICAgICAgIDIzNSxcbiAgICAgICAgICAyMTIsXG4gICAgICAgICAgMTIzLFxuICAgICAgICAgIDIyNSxcbiAgICAgICAgICA5MCxcbiAgICAgICAgICAyOSxcbiAgICAgICAgICAyMjIsXG4gICAgICAgICAgNTMsXG4gICAgICAgICAgMjA1LFxuICAgICAgICAgIDg3LFxuICAgICAgICAgIDE5NSxcbiAgICAgICAgICAxOTUsXG4gICAgICAgICAgMTI2LFxuICAgICAgICAgIDIwOCxcbiAgICAgICAgICAxMjBcbiAgICAgICAgXVxuICAgICAgfSxcbiAgICAgIFwicHVibGljXCI6IHtcbiAgICAgICAgXCJ0eXBlXCI6IFwiQnVmZmVyXCIsXG4gICAgICAgIFwiZGF0YVwiOiBbXG4gICAgICAgICAgMTM0LFxuICAgICAgICAgIDEyOSxcbiAgICAgICAgICAxMSxcbiAgICAgICAgICAyMzgsXG4gICAgICAgICAgMTYxLFxuICAgICAgICAgIDIwMixcbiAgICAgICAgICAyMTUsXG4gICAgICAgICAgMjM0LFxuICAgICAgICAgIDU3LFxuICAgICAgICAgIDE5NixcbiAgICAgICAgICAyNDIsXG4gICAgICAgICAgMjMzLFxuICAgICAgICAgIDExMCxcbiAgICAgICAgICA0LFxuICAgICAgICAgIDE5NyxcbiAgICAgICAgICA0MSxcbiAgICAgICAgICAyNDQsXG4gICAgICAgICAgMjQ4LFxuICAgICAgICAgIDI0OSxcbiAgICAgICAgICAxMzQsXG4gICAgICAgICAgMTgyLFxuICAgICAgICAgIDE1NixcbiAgICAgICAgICA2OCxcbiAgICAgICAgICAxMjEsXG4gICAgICAgICAgMTU0LFxuICAgICAgICAgIDIzMSxcbiAgICAgICAgICAxMjAsXG4gICAgICAgICAgMjgsXG4gICAgICAgICAgMTI0LFxuICAgICAgICAgIDUwLFxuICAgICAgICAgIDU4LFxuICAgICAgICAgIDM1XG4gICAgICAgIF1cbiAgICAgIH1cbiAgICB9LFxuICAgIFwic2lnbmF0dXJlXCI6IHtcbiAgICAgIFwidHlwZVwiOiBcIkJ1ZmZlclwiLFxuICAgICAgXCJkYXRhXCI6IFtcbiAgICAgICAgMTI5LFxuICAgICAgICA0MixcbiAgICAgICAgMjM3LFxuICAgICAgICA0NyxcbiAgICAgICAgNTYsXG4gICAgICAgIDIzNyxcbiAgICAgICAgMzAsXG4gICAgICAgIDI0NSxcbiAgICAgICAgMjI2LFxuICAgICAgICAyNTEsXG4gICAgICAgIDI0MyxcbiAgICAgICAgMTI0LFxuICAgICAgICAyMzgsXG4gICAgICAgIDE5NixcbiAgICAgICAgMjM5LFxuICAgICAgICA2OCxcbiAgICAgICAgMTM1LFxuICAgICAgICAxNzQsXG4gICAgICAgIDUxLFxuICAgICAgICAxNzUsXG4gICAgICAgIDIxNCxcbiAgICAgICAgMjQwLFxuICAgICAgICA3OCxcbiAgICAgICAgNzgsXG4gICAgICAgIDE5NCxcbiAgICAgICAgMjIzLFxuICAgICAgICAyMDcsXG4gICAgICAgIDIwMCxcbiAgICAgICAgNDYsXG4gICAgICAgIDM0LFxuICAgICAgICA5MCxcbiAgICAgICAgMTM2LFxuICAgICAgICAyMjcsXG4gICAgICAgIDM1LFxuICAgICAgICAyNSxcbiAgICAgICAgMTA2LFxuICAgICAgICAxNjYsXG4gICAgICAgIDI0MyxcbiAgICAgICAgMTA3LFxuICAgICAgICAyNTUsXG4gICAgICAgIDE5NixcbiAgICAgICAgNDQsXG4gICAgICAgIDEwMCxcbiAgICAgICAgMTEzLFxuICAgICAgICAxMDUsXG4gICAgICAgIDE0MixcbiAgICAgICAgMjI0LFxuICAgICAgICAxODAsXG4gICAgICAgIDQyLFxuICAgICAgICAxOTEsXG4gICAgICAgIDE1OSxcbiAgICAgICAgMzYsXG4gICAgICAgIDEyOSxcbiAgICAgICAgOTUsXG4gICAgICAgIDY2LFxuICAgICAgICA1MCxcbiAgICAgICAgNTAsXG4gICAgICAgIDczLFxuICAgICAgICAyNyxcbiAgICAgICAgNzYsXG4gICAgICAgIDE1OCxcbiAgICAgICAgMzEsXG4gICAgICAgIDI0LFxuICAgICAgICAxM1xuICAgICAgXVxuICAgIH0sXG4gICAgXCJrZXlJZFwiOiAxXG4gIH0sXG4gIFwicmVnaXN0cmF0aW9uSWRcIjogMTQzLFxuICBcImFkdlNlY3JldEtleVwiOiBcImlXK2tzY2x5NkplbGgxQzQyVFNkRjJBOVA4K1JxNExsRGx3U0RScjd6Zms9XCIsXG4gIFwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzXCI6IFtdLFxuICBcIm5leHRQcmVLZXlJZFwiOiAzMSxcbiAgXCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZFwiOiAzMSxcbiAgXCJhY2NvdW50U3luY0NvdW50ZXJcIjogMCxcbiAgXCJhY2NvdW50U2V0dGluZ3NcIjoge1xuICAgIFwidW5hcmNoaXZlQ2hhdHNcIjogZmFsc2VcbiAgfSxcbiAgXCJkZXZpY2VJZFwiOiBcIm1vZV9kVjRQU19TVTAwUzEtYWlzelFcIixcbiAgXCJwaG9uZUlkXCI6IFwiYTI5ZDBkYWUtNTVhMC00NmMwLTkyNmUtNjRkZjY4NzRkODlhXCIsXG4gIFwiaWRlbnRpdHlJZFwiOiB7XG4gICAgXCJ0eXBlXCI6IFwiQnVmZmVyXCIsXG4gICAgXCJkYXRhXCI6IFtcbiAgICAgIDE2MixcbiAgICAgIDI0MSxcbiAgICAgIDIyMixcbiAgICAgIDc4LFxuICAgICAgMTk5LFxuICAgICAgMjA1LFxuICAgICAgMjMyLFxuICAgICAgMjM2LFxuICAgICAgMjMzLFxuICAgICAgNTMsXG4gICAgICAyNDcsXG4gICAgICAxODcsXG4gICAgICA1NCxcbiAgICAgIDE2MyxcbiAgICAgIDQ5LFxuICAgICAgMTkxLFxuICAgICAgMTQsXG4gICAgICA2NSxcbiAgICAgIDIzNSxcbiAgICAgIDE1MVxuICAgIF1cbiAgfSxcbiAgXCJyZWdpc3RlcmVkXCI6IGZhbHNlLFxuICBcImJhY2t1cFRva2VuXCI6IHtcbiAgICBcInR5cGVcIjogXCJCdWZmZXJcIixcbiAgICBcImRhdGFcIjogW1xuICAgICAgMTY1LFxuICAgICAgMTAwLFxuICAgICAgMTgzLFxuICAgICAgMjE4LFxuICAgICAgMTU3LFxuICAgICAgMjA5LFxuICAgICAgNDYsXG4gICAgICAyMzMsXG4gICAgICAxMzAsXG4gICAgICAxNzUsXG4gICAgICAxNjgsXG4gICAgICAxMzMsXG4gICAgICA1NyxcbiAgICAgIDY5LFxuICAgICAgNzIsXG4gICAgICAyMjQsXG4gICAgICA3NCxcbiAgICAgIDIxNyxcbiAgICAgIDExNixcbiAgICAgIDUyXG4gICAgXVxuICB9LFxuICBcInJlZ2lzdHJhdGlvblwiOiB7fSxcbiAgXCJhY2NvdW50XCI6IHtcbiAgICBcImRldGFpbHNcIjogXCJDTHFFbnBRQ0VJTGJ1YlFHR0JnZ0FDZ0FcIixcbiAgICBcImFjY291bnRTaWduYXR1cmVLZXlcIjogXCJoaitmMWYxcFp3cUVlM3RmQUJwWUVQNzk2K25PNGI1VVUvN08vdjVxVG1jPVwiLFxuICAgIFwiYWNjb3VudFNpZ25hdHVyZVwiOiBcIk9aQ0hTSzliQ3pnZ0lHL05rdjEvYVJjbTdCSmxUcXBESDRJZXBnOGhidEY2VDNaeDdWSy9ERmF5RmZ5Qjl3Q29Tc3hpK3FxZ3hvR0JVYUUrczVOcUN3PT1cIixcbiAgICBcImRldmljZVNpZ25hdHVyZVwiOiBcIk5aRU05Um1GK3VyMXVlZGJUVEJDdzdjTHBuZjRpbzFOT20xaXRUanpDTVFtY1NHYy84QmN3L2VpY095ODgwQUtuMGxFam1FTHdQMXFtWm5PdmRxMUNRPT1cIlxuICB9LFxuICBcIm1lXCI6IHtcbiAgICBcImlkXCI6IFwiMjU2NzY2Mjc4NDYxOjI5QHMud2hhdHNhcHAubmV0XCIsXG4gICAgXCJuYW1lXCI6IFwiSCBOZXR3b3JrZXJzXCIsXG4gICAgXCJsaWRcIjogXCIyMzQ0MzY4OTc1ODc0NTQ6MjlAbGlkXCJcbiAgfSxcbiAgXCJzaWduYWxJZGVudGl0aWVzXCI6IFtcbiAgICB7XG4gICAgICBcImlkZW50aWZpZXJcIjoge1xuICAgICAgICBcIm5hbWVcIjogXCIyNTY3NjYyNzg0NjE6MjlAcy53aGF0c2FwcC5uZXRcIixcbiAgICAgICAgXCJkZXZpY2VJZFwiOiAwXG4gICAgICB9LFxuICAgICAgXCJpZGVudGlmaWVyS2V5XCI6IHtcbiAgICAgICAgXCJ0eXBlXCI6IFwiQnVmZmVyXCIsXG4gICAgICAgIFwiZGF0YVwiOiBbXG4gICAgICAgICAgNSxcbiAgICAgICAgICAxMzQsXG4gICAgICAgICAgNjMsXG4gICAgICAgICAgMTU5LFxuICAgICAgICAgIDIxMyxcbiAgICAgICAgICAyNTMsXG4gICAgICAgICAgMTA1LFxuICAgICAgICAgIDEwMyxcbiAgICAgICAgICAxMCxcbiAgICAgICAgICAxMzIsXG4gICAgICAgICAgMTIzLFxuICAgICAgICAgIDEyMyxcbiAgICAgICAgICA5NSxcbiAgICAgICAgICAwLFxuICAgICAgICAgIDI2LFxuICAgICAgICAgIDg4LFxuICAgICAgICAgIDE2LFxuICAgICAgICAgIDI1NCxcbiAgICAgICAgICAyNTMsXG4gICAgICAgICAgMjM1LFxuICAgICAgICAgIDIzMyxcbiAgICAgICAgICAyMDYsXG4gICAgICAgICAgMjI1LFxuICAgICAgICAgIDE5MCxcbiAgICAgICAgICA4NCxcbiAgICAgICAgICA4MyxcbiAgICAgICAgICAyNTQsXG4gICAgICAgICAgMjA2LFxuICAgICAgICAgIDI1NCxcbiAgICAgICAgICAyNTQsXG4gICAgICAgICAgMTA2LFxuICAgICAgICAgIDc4LFxuICAgICAgICAgIDEwM1xuICAgICAgICBdXG4gICAgICB9XG4gICAgfVxuICBdLFxuICBcInBsYXRmb3JtXCI6IFwic21iYVwiLFxuICBcImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcFwiOiAxNzIwNjEwMTg0LFxuICBcIm15QXBwU3RhdGVLZXlJZFwiOiBcIkFBQUFBRS9IXCJcbn0iLAogICJhcHAtc3RhdGUtc3luYy1rZXktQUFBQUFFKysuanNvbiI6ICJ7XCJrZXlEYXRhXCI6XCJFeWswSHoxVDdWM0ErTWlSZ09FYW9oc21SZlY3NWc5U0p3cG9oZ1NCc05NPVwiLFwiZmluZ2VycHJpbnRcIjp7XCJyYXdJZFwiOjU3OTMwNjA0MixcImN1cnJlbnRJbmRleFwiOjEwLFwiZGV2aWNlSW5kZXhlc1wiOlswLDMsMTAsMV19LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRSszLmpzb24iOiAie1wia2V5RGF0YVwiOlwidjRnd08xM1hkLy9COFBzWW5IY1dxWEMxSDhZRWNxZndCMmdlSU1XRUFJYz1cIixcImZpbmdlcnByaW50XCI6e1wicmF3SWRcIjo1NzkzMDYwNDIsXCJjdXJyZW50SW5kZXhcIjoxLFwiZGV2aWNlSW5kZXhlc1wiOlswLDFdfSxcInRpbWVzdGFtcFwiOlwiMFwifSIsCiAgImFwcC1zdGF0ZS1zeW5jLWtleS1BQUFBQUUrNy5qc29uIjogIntcImtleURhdGFcIjpcInFyUTNQNmVtQ1J1dlZ5VENRbHVBUVM1cVAxTXpvaWoydHM5akFpUG1NNzA9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6NyxcImRldmljZUluZGV4ZXNcIjpbMCwzLDQsMV19LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRSs4Lmpzb24iOiAie1wia2V5RGF0YVwiOlwiU1NBYmV0aTZuQktXK1lDTHVpQkorcDdKZFl1Sllac2VWOFVXbkg4S20vcz1cIixcImZpbmdlcnByaW50XCI6e1wicmF3SWRcIjo1NzkzMDYwNDIsXCJjdXJyZW50SW5kZXhcIjo4LFwiZGV2aWNlSW5kZXhlc1wiOlswLDMsNCwxXX0sXCJ0aW1lc3RhbXBcIjpcIjBcIn0iLAogICJhcHAtc3RhdGUtc3luYy1rZXktQUFBQUFFKzkuanNvbiI6ICJ7XCJrZXlEYXRhXCI6XCIyK2RpWWZHbUx6R0NWb3drWUdyOXlOdVQyQ3BIR3NDenhUWDZGVEo1eC9rPVwiLFwiZmluZ2VycHJpbnRcIjp7XCJyYXdJZFwiOjU3OTMwNjA0MixcImN1cnJlbnRJbmRleFwiOjksXCJkZXZpY2VJbmRleGVzXCI6WzAsOSwzLDFdfSxcInRpbWVzdGFtcFwiOlwiMFwifSIsCiAgImFwcC1zdGF0ZS1zeW5jLWtleS1BQUFBQUUrX18uanNvbiI6ICJ7XCJrZXlEYXRhXCI6XCJyNGRZc1d1VnE4cC9KeWh0ZFZzUW5rVlVVcGNQWk94WlJhOWMrN2FKNG9vPVwiLFwiZmluZ2VycHJpbnRcIjp7XCJyYXdJZFwiOjU3OTMwNjA0MixcImN1cnJlbnRJbmRleFwiOjExLFwiZGV2aWNlSW5kZXhlc1wiOlsxMSwwLDMsMV19LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fQS5qc29uIjogIntcImtleURhdGFcIjpcIk50MDBER1FyUVUyUWdrWHA4YTJFenZKby9EQ003aHhpQkg3Z0Zlek9pR1k9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTEsXCJkZXZpY2VJbmRleGVzXCI6WzExLDAsM119LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fQi5qc29uIjogIntcImtleURhdGFcIjpcIjBzd1ZqTTV3QTdyQUN4K0V6cnVmcldaY2NqWGZIaUVqN3lDeHNGTGlNNHc9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTMsXCJkZXZpY2VJbmRleGVzXCI6WzAsMTMsMywxMl19LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fQy5qc29uIjogIntcImtleURhdGFcIjpcIlV0UUFOZE1uUmNrVFVwaEZPOU5TQ1RxZWJlcTFCMFRJUXVCN3Y2WG9SNzg9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTMsXCJkZXZpY2VJbmRleGVzXCI6WzAsMTMsM119LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fRC5qc29uIjogIntcImtleURhdGFcIjpcIkVNelhBWHR4d0VMT3diWVEzVXRqRzRHalVrbHY2c1F1ZUxYNlk5bm9yaUU9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTMsXCJkZXZpY2VJbmRleGVzXCI6WzAsM119LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fRS5qc29uIjogIntcImtleURhdGFcIjpcIlFxc1hlcTViMXVHSW5BQmtqWS9wSmdidXlaTXU5Q2tXVTIrNzdvcWlmazg9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTUsXCJkZXZpY2VJbmRleGVzXCI6WzAsMywxNV19LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fRi5qc29uIjogIntcImtleURhdGFcIjpcIlcwdFdrUTBiSDQ5cm5iZm1aeXBTdjBDMWJYWmRlb3NGVWZienYvSEdXY2c9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTcsXCJkZXZpY2VJbmRleGVzXCI6WzAsMywxNywxNl19LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fRy5qc29uIjogIntcImtleURhdGFcIjpcIlRKWDd1bzlkK29ER1kzSVE4L3pZRVFoSUVpMUZHZUovOTVZaXg5TUFKRms9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTcsXCJkZXZpY2VJbmRleGVzXCI6WzAsMywxN119LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fSC5qc29uIjogIntcImtleURhdGFcIjpcInRoTElVdVdDbFFCYkx2LzF3SlhsMU0vM2Qyd2RJMENCbU9qZzlNbVFUZ0U9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTgsXCJkZXZpY2VJbmRleGVzXCI6WzAsMywxOF19LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fSS5qc29uIjogIntcImtleURhdGFcIjpcIjk2THlQejVZdWNXR2dVcjlZME92allvdm9oRm5NY1ZSbUNZYk8wcURTZFE9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTksXCJkZXZpY2VJbmRleGVzXCI6WzAsMTksM119LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fSi5qc29uIjogIntcImtleURhdGFcIjpcInl2ckVqTW0zWnFDRnc3dWx2R0FoL0djZFEyTTJUMmpIK0ZPQVpGL0xybnc9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MTksXCJkZXZpY2VJbmRleGVzXCI6WzAsM119LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fSy5qc29uIjogIntcImtleURhdGFcIjpcIjJtOUNxZlFaNWs5Snd3a00yVDBxTXZVcGZhY2VveFR2NG1wa0swSlZhMDQ9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MjAsXCJkZXZpY2VJbmRleGVzXCI6WzAsM119LFwidGltZXN0YW1wXCI6XCIwXCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fTC5qc29uIjogIntcImtleURhdGFcIjpcInNPUmM3TnlSay9GOHB1aHBTUDBDWGtReXhmYnozV0JVZzNMM01YbWhxM009XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MjEsXCJkZXZpY2VJbmRleGVzXCI6WzAsM119LFwidGltZXN0YW1wXCI6XCIxNzE5MzE0NjM5MjY0XCJ9IiwKICAiYXBwLXN0YXRlLXN5bmMta2V5LUFBQUFBRV9fTS5qc29uIjogIntcImtleURhdGFcIjpcInBSN0RWTTc1RmkxTzFMbmdCT2lMRUEweG9JT2VIVmRGWnpWZHlDRU92dEk9XCIsXCJmaW5nZXJwcmludFwiOntcInJhd0lkXCI6NTc5MzA2MDQyLFwiY3VycmVudEluZGV4XCI6MjMsXCJkZXZpY2VJbmRleGVzXCI6WzAsMjMsM119LFwidGltZXN0YW1wXCI6XCIxNzE5MzE0NzI1MzQ1XCJ9Igp9"  // PUT your SESSION_ID 
 
 
 module.exports = {
 
-  menu: process.env.MENU || "", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
+  menu: process.env.MENU || "Hamdan-Md default", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
 
   HANDLERS: process.env.PREFIX  || ".",
   BRANCH  : process.env.BRANCH  || "main",
   VERSION : process.env.VERSION || "1.3.7",
-  caption : global.caption || "" , // ```『 ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʜᴀɪʟ²²¹-ᴍᴅ 』```", //*『sᴜʙsᴄʀɪʙᴇ • sᴜʜᴀɪʟ ᴛᴇᴄʜ』*\n youtube.com/@suhailtechinfo0"),
+  caption : global.caption || "" , // ```『 ᴘᴏᴡᴇʀᴇᴅ ʙʏ HAMDAN²²¹-ᴍᴅ 』```", //*『sᴜʙsᴄʀɪʙᴇ • HAMDAN ᴛᴇᴄʜ』*\n youtube.com/@suhailtechinfo0"),
  
   author : process.env.PACK_AUTHER|| "",
   packname: process.env.PACK_NAME || "",
-  botname : process.env.BOT_NAME  || "sᴜʜᴀɪʟ-ᴍᴅ",
-  ownername:process.env.OWNER_NAME|| "It'x Suhail",
+  botname : process.env.BOT_NAME  || "HAMDAN-MD",
+  ownername:process.env.OWNER_NAME|| "HAMDAN",
 
 
-  errorChat : process.env.ERROR_CHAT || "",
+  errorChat : process.env.ERROR_CHAT || "true",
   KOYEB_API : process.env.KOYEB_API  || "false",
 
   REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
@@ -91,8 +91,8 @@ module.exports = {
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
 
 
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "private",
-  LANG: ( process.env.THEME ||  "SUHAIL"  ).toUpperCase(),
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "public",
+  LANG: ( process.env.THEME ||  "HAMDAN"  ).toUpperCase(),
 
 
 
@@ -131,14 +131,14 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
 
 // ========================= [ Disables in V.1.2.8 ] ===============================\\  
   //style : process.env.STYLE || "2",  // put '1' & "2" here to check bot styles
-  //readmessage:process.env.READ_MESSAGE|| "false",
+  //readmessage:process.env.READ_MESSAGE|| "true",
   //warncount: process.env.WARN_COUNT || 3,
   //userImages:process.env.USER_IMAGES|| "text",  // SET IMAGE AND VIDEO URL FOR BOT MENUS 
-  //disablepm: process.env.DISABLE_PM || "false",
-  //MsgsInLog: process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
-  //readcmds:process.env.READ_COMMANDS|| "false", 
-  //alwaysonline:process.env.WAPRESENCE|| "unavailable", // 'unavailable' | 'online' | 'composing' | 'recording' | 'paused'
-  //read_status: process.env.AUTO_READ_STATUS || "false",
-  //save_status: process.env.AUTO_SAVE_STATUS || "false",
+  //disablepm: process.env.DISABLE_PM || "true",
+  //MsgsInLog: process.env.MSGS_IN_LOG|| "true", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
+  //readcmds:process.env.READ_COMMANDS|| "true", 
+  //alwaysonline:process.env.WAPRESENCE|| "recording", // 'unavailable' | 'online' | 'composing' | 'recording' | 'paused'
+  //read_status: process.env.AUTO_READ_STATUS || "true",
+  //save_status: process.env.AUTO_SAVE_STATUS || "true",
   //aitts_Voice_Id : process.env.AITTS_ID || "37",
   //ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY  || "",
